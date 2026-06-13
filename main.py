@@ -5,12 +5,13 @@ import os
 MY_EMAIL = os.environ.get("MY_EMAIL")
 PASSWORD = os.environ.get("PASSWORD")
 URL= os.environ.get("URL")
+APPID =  os.environ.get("APPID")
 
 
 parameters = {
     "lat": 51.507351,
     "lon": -0.127758,
-    "appid": os.environ.get("APPID"),
+    "appid": APPID,
     "cnt": 4,
 }
 
