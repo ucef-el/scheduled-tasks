@@ -44,6 +44,22 @@ jobs:
             echo "MY_PASSWORD is configured"
           fi
 
+          if [ -z "$URL" ]; then
+            echo "URL secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "URL is configured"
+          fi
+
+          if [ -z "$APPID" ]; then
+            echo "APPID secret is not set!"
+            echo "Go to Settings > Secrets > Actions and add it."
+            exit 1
+          else
+            echo "APPID is configured"
+          fi
+
           echo ""
           echo "All secrets are configured!"
 
