@@ -25,6 +25,8 @@ jobs:
         env:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
+          URL: ${{ secrets.URL }}
+          APPID: ${{ secrets.APPID }}
         run: |
           if [ -z "$MY_EMAIL" ]; then
             echo "MY_EMAIL secret is not set!"
