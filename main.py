@@ -14,7 +14,7 @@ parameters = {
     "cnt": 4,
 }
 
-response = requests.get(url="api.openweathermap.org/data/2.5/forecast", params=parameters)
+response = requests.get(url="https://api.openweathermap.org/data/2.5/forecast", params=parameters)
 response.raise_for_status()
 weather_data = response.json()
 weather_list = weather_data["list"]
