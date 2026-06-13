@@ -10,7 +10,7 @@ URL= os.environ.get("URL")
 parameters = {
     "lat": 51.507351,
     "lon": -0.127758,
-    "appid": os.environ.get("appid"),
+    "appid": os.environ.get("APPID"),
     "cnt": 4,
 }
 
