@@ -19,7 +19,7 @@ response.raise_for_status()
 weather_data = response.json()
 weather_list = weather_data["list"]
 
-will_be_raining = False
+will_be_raining = True
 
 for count in weather_list:
     weather_id = count["weather"][0]["id"]
